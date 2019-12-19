@@ -1,0 +1,7 @@
+*.pyc
+*.pem
+*.log
+*.pid
+*.xlsx
+.vscode
+.idea
