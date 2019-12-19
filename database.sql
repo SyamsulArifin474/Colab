@@ -47,9 +47,9 @@ CREATE TRIGGER `insertabsen` BEFORE INSERT ON `absen` FOR EACH ROW BEGIN
 DECLARE msg varchar(65);
 IF NEW.nik = '' or NEW.nik IS NULL THEN
 	SIGNAL SQLSTATE '45000'
-    SET MESSAGE_TEXT = "Gagal Menambah Virtual Account, Karena NIK/PASSPORT tidak boleh kosong";    
+    SET MESSAGE_TEXT = "Gagal Menambah Absensi, Karena NIK/PASSPORT tidak boleh kosong";    
 ELSEIF NEW.nik NOT REGEXP "^[0-9]{16}$|^[a-zA-Z]{2}[0-9]{7}$" THEN
-	SET msg = CONCAT("Gagal Menambah Virtual Account, Karena NIK/PASSPORT Tidak Sesuai ", NEW.nik);
+	SET msg = CONCAT("Gagal Menambah Absensi, Karena NIK/PASSPORT Tidak Sesuai ", NEW.nik);
 	SIGNAL SQLSTATE '45000'
     SET MESSAGE_TEXT = msg;
 ELSEIF NEW.bulan > now() THEN
