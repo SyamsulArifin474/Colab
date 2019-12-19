@@ -5,8 +5,8 @@ import xlrd, os
 from app import logger
 
 HOST 		= 'localhost' # set host mysql
-USER 		= 'daltim' # set user mysql
-PASS		= 'daltim'# set password mysql
+USER 		= 'root' # set user mysql
+PASS		= ''# set password mysql
 DB			= 'daltim'# set nama database mysql
 
 # list query
