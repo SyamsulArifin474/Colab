@@ -1,4 +1,4 @@
-# Colab
+# Simple Telegram Bot
 #### Install
 install python versi 3.6.7
 
@@ -11,3 +11,7 @@ pip install -r requiretment.txt
 ```python
 python Bot.py
 ```
+#### Setting Database
+|HOST|USERNAME|PASSWORD|DB NAME|
+|---|---------|--------|-------|
+|Localhost|root||daltim|
