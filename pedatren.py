@@ -3,7 +3,7 @@ import json
 import aiohttp, asyncio
 import base64  # , common
 from requests.auth import HTTPBasicAuth
-from config import conf
+from config import conf, username, password
 
 
 class Login():
@@ -37,7 +37,7 @@ class Login():
 
     def login(self):
         data = requests.get(self.url+'auth/login',
-                            auth=(conf['user'], conf['pass']), headers=self.headers)
+                            auth=(username, password), headers=self.headers)
         if data.status_code == 200:
             self.__token = data.headers['x-token']
             with open('token.txt', 'w') as f:

@@ -4,7 +4,7 @@ import telebot
 import time
 import re
 import os
-from config import text_messages, conf
+from config import text_messages, conf, tokenBot
 from datetime import datetime
 import flask
 from werkzeug.serving import run_simple
@@ -12,8 +12,7 @@ from app import logger, views
 from app.rules import *
 from app.common import _insertAbsen, _insertVA, _updateVa
 
-API_TOKEN = '{}'.format(conf['token']) # set token ambil dari config
-bot = telebot.TeleBot(API_TOKEN, threaded=False)
+bot = telebot.TeleBot(tokenBot, threaded=False)
 
 # set WebHook
 WEBHOOK_HOST = '206.189.153.85' # IP VPS

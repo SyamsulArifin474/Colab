@@ -1,10 +1,13 @@
+import os
+
+tokenBot = os.getenv("TOKEN_BOT_TELEGRAM")
+username = os.getenv("USERNAME_PEDATREN")
+password = os.getenv("PASSWORD_PEDATREN")
+
 conf = {
-    'token'			 	 : 'TOKEN TELEGRAM BOX', # token telegram bot
 	'agent'				 : 'Bot Daltim', # Set User Agent
 	'wilayah'			 : 'daltim', # Set Wilayah
 	'bri'				 : "01199", # kode BRIVA 
-	'user'				 : 'userpedatren', # user pedatren
-	'pass'				 : 'password pedatren' # password pedatren
 }
 
 text_messages = {
