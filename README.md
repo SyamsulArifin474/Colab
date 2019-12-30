@@ -6,6 +6,19 @@ install python versi 3.6.7
 ```python
 pip install -r requiretment.txt
 ```
+#### Buat OS Environment
+##### Windows
+```shell
+set TOKEN_BOT_TELEGRAM=ISI DENGAN TOKEN TELEGRAMMU
+set USERNAME_PEDATREN=ISI DENGAN USERNAME PEDATRENMU
+set PASSWORD_PEDATREN=ISI DENGAN PASSWORD PEDATRENMU
+```
+##### Linux
+```shell
+export TOKEN_BOT_TELEGRAM=ISI DENGAN TOKEN TELEGRAMMU
+export USERNAME_PEDATREN=ISI DENGAN USERNAME PEDATRENMU
+export PASSWORD_PEDATREN=ISI DENGAN PASSWORD PEDATRENMU
+```
 
 #### Jalankan Bot
 ```python
