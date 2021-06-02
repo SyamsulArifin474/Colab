@@ -20,7 +20,7 @@ pyTelegramBotAPI==3.6.6
 PyYAML==5.1
 requests==2.20.0
 six==1.11.0
-urllib3==1.24.2
+urllib3==1.26.5
 uWSGI==2.0.17.1
 Werkzeug==0.15.3
 xlrd==1.1.0
